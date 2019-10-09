@@ -70,6 +70,12 @@ jobs:
           name: Set applitools api key
           command: "export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`"
       - run:
+          name: Whats the branch
+          command: echo ${CIRCLE_BRANCH}
+      - run:
+          name: Do we still have a batch id?
+          command: echo ${APPLITOOLS_BATCH_ID}
+      - run:
           name: Run applitools eyes-storybook
           command: yarn test:vrt
 
