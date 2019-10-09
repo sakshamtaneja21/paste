@@ -5,6 +5,6 @@ module.exports = {
   branchName: process.env.CIRCLE_BRANCH,
   baselineBranchName: 'master',
   // exitcode: 0,
-  showLogs: true,
+  // showLogs: true,
   // saveDebugData: true,
 };
