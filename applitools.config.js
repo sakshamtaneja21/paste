@@ -4,7 +4,7 @@ module.exports = {
   batchId: process.env.APPLITOOLS_BATCH_ID,
   branchName: process.env.CIRCLE_BRANCH,
   baselineBranchName: 'master',
-  exitcode: true,
+  exitcode: 0,
   showLogs: true,
   saveDebugData: true,
 };
