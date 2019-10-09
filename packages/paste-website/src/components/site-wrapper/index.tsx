@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {css, Global} from '@emotion/core';
-import Helmet from 'react-helmet';
+import {Helmet} from 'react-helmet';
 import {SiteBody} from './SiteBody';
 import {Sidebar} from './sidebar';
 import {SiteHeader} from './SiteHeader';
