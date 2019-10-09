@@ -79,7 +79,7 @@ jobs:
           name: Run applitools eyes-storybook
           command: yarn test:vrt
           environment:
-            APPLITOOLS_BATCH_ID: $CIRCLE_SHA1
+            APPLITOOLS_BATCH_ID: echo ${CIRCLE_SHA1}
 
   prettier:
     executor: job-executor
