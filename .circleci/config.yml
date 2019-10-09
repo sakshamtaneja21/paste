@@ -64,8 +64,11 @@ jobs:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
-      - attach_workspace:
-          at: ~/
+      - run: yarn
+      - run: yarn bootstrap
+      - run:
+          name: Run package builds
+          command: yarn build
       - run:
           name: Set applitools api key
           command: |
@@ -103,8 +106,6 @@ workflows:
           requires:
             - build
       - applitools:
-          requires:
-            - build
       - prettier:
           requires:
             - build
