@@ -30,7 +30,7 @@
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
     "@twilio-paste/absolute": "^0.0.1",
-    "@twilio-paste/spinner": "^0.1.2",
+    "@twilio-paste/spinner": "^0.1.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-system": "^4.1.0"
